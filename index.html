@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+
+  
+  <nav class="navbar navbar-expand-sm navigationbar">
+    <div class="container-fluid">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link a" href="index.html">School Soccer</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link a" href="page2.html">Soccer pictures</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link a" href="page3.html">school soccer and club</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Dropdown</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="index.html">Clubs</a></li>
+            <li><a class="dropdown-item" href="page2.html">Our School</a></li>
+            <li><a class="dropdown-item" href="page3.html">More Information</a></li>
+      </ul>
+    </div>
+  </nav>
+</body>
+</html>
+
+
+ <div class="container-fluid mt-3">
+   
+    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
+ CLICK ME 
+    </button>
+  </div>
+<br>
+<br>
+<br>
+<br>
+
+<div class="row">
+  <div class="col-4">
+    <div class="container mt-3">      
+      <a href="page2.html"><button type="button" class="btn btn-outline-light p">School Soccer</button>  </a>
+     
+    </div>
+  </div>
+  <div class="col-4">
+    <div class="container mt-3">        
+      <a href="page3.html"><button type="button" class="btn btn-outline-light p">Club Soccer</button>  </a>
+    </div>
+  </div>
+  <div class="col-4">
+    <div class="container mt-3">        
+      <a href="page4.html"><button type="button" class="btn btn-outline-light p"> Club Vs School</button>  </a>
+    </div>
+  </div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<p class="p1">Soccer is a fun sport that I enjoy playing and spending time practicing, I love how competetive 
+  It is in the state of NJ. I play year round and I play for two different teams</p>
+
+  <div class="offcanvas offcanvas-start" id="demo">
+    <div class="offcanvas-header">
+      <h1 class="offcanvas-title">SOCCER IS THE BEST SPORT</h1>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body">
+      <p>SUPER COOL.</p>
+      <p>LOOK AROUND.</p>
+      <p>SOCCER IS SO MUCH FUN.</p>
+      <button class="btn btn-secondary" type="button">I go no where</button>
+    </div>
+  </div>
+
+
+
+
+
+
+
+  <div class="row c1">
+    <div class="col-4">
+      <div class="container-fluid mt-3 p3">
+        <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#myModal">
+   Soccer
+        </button>
+      </div>
+     
+      <div class="modal" id="myModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+     
+            <div class="modal-header" >
+              <h4 class="modal-title">Soccer</h4>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+     
+            <div class="modal-body">
+            Soccer is a fun sport that I play year round with my friends
+            </div>
+     
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+            </div>
+     
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-4">
+      <div class="container-fluid mt-3 p3">
+        <div class="container-fluid mt-3">
+          <a class="a" href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="Club soccer is really fun and it is really consistant, I also made a lot of frinds 
+          ">Club soccer</a>
+           
+         
+          <script>
+            var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+            var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+              return new bootstrap.Tooltip(tooltipTriggerEl)
+            })
+            </script>
+          </div>
+          </div>
+        </div>
+    <div class="col-4">
+      <div class="container-fluid mt-3 p3">
+        <button type="button" class="btn btn-danger" data-bs-toggle="popover" title="Very different" data-bs-content="Soccer for club is more competetive but soccer for school is more gloryful if you win">
+         Club Vs School 
+          </button>
+          </div>
+         
+          <script>
+          var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+          var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+          return new bootstrap.Popover(popoverTriggerEl)
+          })
+          </script>
+          </div>
+  </div>
+  
+  
